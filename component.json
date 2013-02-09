@@ -1,0 +1,9 @@
+{
+  "name": "doc-listener",
+  "version": "0.0.1",
+  "main": "./doc-listener.js",
+  "dependencies": {
+    "eventEmitter": ">=3",
+    "eventie": "desandro/eventie"
+  }
+}
