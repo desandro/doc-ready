@@ -16,15 +16,15 @@ var document = window.document;
 
 var docListener = new EventEmitter();
 
-var done = false;
+var isDone = false;
 
 function init( event ) {
   // bail if IE8 document is not ready just yet
   var isIE8NotReady = event.type === 'readystatechange' && document.readyState !== 'complete';
-  if ( done || isIE8NotReady ) {
+  if ( isDone || isIE8NotReady ) {
     return;
   }
-  done = true;
+  isDone = true;
   docListener.emit( 'ready', event );
 }
 

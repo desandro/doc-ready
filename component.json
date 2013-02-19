@@ -1,6 +1,6 @@
 {
   "name": "doc-listener",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./doc-listener.js",
   "dependencies": {
     "eventEmitter": ">=3",
