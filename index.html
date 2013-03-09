@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
 
-  <title>docListener</title>
+  <title>docReady</title>
 
   <style>body { font-family: sans-serif; }</style>
 
 </head>
 <body>
 
-  <h1>docListener</h1>
+  <h1>docReady</h1>
 
 <script src="components/eventEmitter/EventEmitter.js"></script>
 <script src="components/eventie/eventie.js"></script>
@@ -18,12 +18,18 @@
 <script>
 ( function( window ) {
 
-docListener.on('ready', function() {
+docReady( function() {
   document.body.innerHTML += '\<p>okay ready now\</p>';
 });
 
-docListener.on('ready', function() {
+docReady.on('ready', function() {
   document.body.innerHTML += '\<p>im ready too\</p>';
+
+  setTimeout( function() {
+    docReady( function() {
+      document.body.innerHTML += '\<p>Already ready, Right? ' + docReady.isReady + '\</p>';
+    });
+  }, 1000 );
 });
 
 })( this );
