@@ -1,7 +1,7 @@
 {
-  "name": "doc-listener",
-  "version": "0.0.2",
-  "main": "./doc-listener.js",
+  "name": "doc-ready",
+  "version": "0.0.3",
+  "main": "./doc-ready.js",
   "dependencies": {
     "eventEmitter": ">=3",
     "eventie": "desandro/eventie"
