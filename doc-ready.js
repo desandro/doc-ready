@@ -4,12 +4,11 @@
  */
 
 /*jshint browser: true, strict: true, undef: true, unused: true*/
+/*global define: false */
 
 ( function( window ) {
 
 'use strict';
-
-var eventie = window.eventie;
 
 var document = window.document;
 // collection of functions to be triggered on ready
@@ -48,11 +47,21 @@ function init( event ) {
   }
 }
 
-eventie.bind( document, 'DOMContentLoaded', init );
-eventie.bind( document, 'readystatechange', init );
-eventie.bind( window, 'load', init );
+function defineDocReady( eventie ) {
+  eventie.bind( document, 'DOMContentLoaded', init );
+  eventie.bind( document, 'readystatechange', init );
+  eventie.bind( window, 'load', init );
+
+  return docReady;
+}
 
 // transport
-window.docReady = docReady;
+if ( typeof define === 'function' && define.amd ) {
+  // AMD
+  define( [ 'eventie' ], defineDocReady );
+} else {
+  // browser global
+  window.docReady = defineDocReady( window.eventie );
+}
 
 })( this );
