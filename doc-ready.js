@@ -9,24 +9,28 @@
 
 'use strict';
 
-var EventEmitter = window.EventEmitter;
 var eventie = window.eventie;
 
 var document = window.document;
+// collection of functions to be triggered on ready
+var queue = [];
 
 function docReady( fn ) {
+  // throw out non-functions
+  if ( typeof fn !== 'function' ) {
+    return;
+  }
+
   if ( docReady.isReady ) {
+    // ready now, hit it
     fn();
   } else {
-    docReady.on( 'ready', fn );
+    // queue function when ready
+    queue.push( fn );
   }
 }
 
 docReady.isReady = false;
-
-for ( var prop in EventEmitter.prototype ) {
-  docReady[ prop ] = EventEmitter.prototype[ prop ];
-}
 
 // triggered on various doc ready events
 function init( event ) {
@@ -36,7 +40,12 @@ function init( event ) {
     return;
   }
   docReady.isReady = true;
-  docReady.emit( 'ready', event );
+
+  // process queue
+  for ( var i=0, len = queue.length; i < len; i++ ) {
+    var fn = queue[i];
+    fn();
+  }
 }
 
 eventie.bind( document, 'DOMContentLoaded', init );

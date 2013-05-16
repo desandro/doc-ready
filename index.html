@@ -12,7 +12,6 @@
 
   <h1>docReady</h1>
 
-<script src="components/eventEmitter/EventEmitter.js"></script>
 <script src="components/eventie/eventie.js"></script>
 <script src="doc-ready.js"></script>
 <script>
@@ -22,7 +21,7 @@ docReady( function() {
   document.body.innerHTML += '\<p>okay ready now\</p>';
 });
 
-docReady.on('ready', function() {
+docReady( function() {
   document.body.innerHTML += '\<p>im ready too\</p>';
 
   setTimeout( function() {

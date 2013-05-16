@@ -3,7 +3,6 @@
   "version": "0.0.3",
   "main": "./doc-ready.js",
   "dependencies": {
-    "eventEmitter": ">=3",
     "eventie": "desandro/eventie"
   }
 }
