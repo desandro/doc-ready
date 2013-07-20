@@ -58,7 +58,7 @@ function defineDocReady( eventie ) {
 // transport
 if ( typeof define === 'function' && define.amd ) {
   // AMD
-  define( [ 'eventie' ], defineDocReady );
+  define( [ 'eventie/eventie' ], defineDocReady );
 } else {
   // browser global
   window.docReady = defineDocReady( window.eventie );
