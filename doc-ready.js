@@ -58,6 +58,8 @@ function defineDocReady( eventie ) {
 // transport
 if ( typeof define === 'function' && define.amd ) {
   // AMD
+  // if RequireJS, then doc is already ready
+  docReady.isReady = typeof requirejs === 'function';
   define( [ 'eventie/eventie' ], defineDocReady );
 } else {
   // browser global
