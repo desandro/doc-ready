@@ -17,3 +17,12 @@ docReady is a [Bower](http://bower.io) component
 ``` bash
 bower install desandro/doc-ready
 ```
+
+## Component
+
+docReady can also be handled by [component](http://github.com/component/component)
+
+``` bash
+component install desandro/doc-ready
+```
+
