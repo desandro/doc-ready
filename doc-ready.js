@@ -1,6 +1,7 @@
 /*!
  * docReady
  * Cross browser DOMContentLoaded event emitter
+ * MIT license
  */
 
 /*jshint browser: true, strict: true, undef: true, unused: true*/
