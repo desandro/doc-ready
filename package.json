@@ -1,7 +1,7 @@
 {
   "name": "doc-ready",
-  "version": "1.0.2",
-  "description": "Cross browser document ready helper. Supported by IE8+ and good browsers.",
+  "version": "1.0.3",
+  "description": "Let's get this party started... on document ready",
   "main": "doc-ready.js",
   "directories": {
     "example": "examples"
@@ -13,13 +13,18 @@
     "type": "git",
     "url": "https://github.com/desandro/doc-ready.git"
   },
-  "author": "",
+  "author": "David DeSandro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/desandro/doc-ready/issues"
   },
   "homepage": "https://github.com/desandro/doc-ready",
   "dependencies": {
-    "eventie": "https://github.com/wbinnssmith/eventie/archive/commonjs.tar.gz"
-  }
+    "eventie": "desandro/eventie"
+  },
+  "keywords": [
+    "DOM",
+    "document",
+    "ready"
+  ]
 }

@@ -1,5 +1,5 @@
 /*!
- * docReady
+ * docReady v1.0.3
  * Cross browser DOMContentLoaded event emitter
  * MIT license
  */
