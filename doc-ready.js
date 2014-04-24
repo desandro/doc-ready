@@ -5,7 +5,7 @@
  */
 
 /*jshint browser: true, strict: true, undef: true, unused: true*/
-/*global define: false */
+/*global define: false, require: false, module: false */
 
 ( function( window ) {
 
