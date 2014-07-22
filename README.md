@@ -14,7 +14,7 @@ Props to [dperini/ContentLoaded](https://github.com/dperini/ContentLoaded) for o
 
 Download [doc-ready.js](doc-ready.js)
 
-Install with [:bird: Bower](http://bower.io) `bower install desandro/doc-ready`
+Install with [:bird: Bower](http://bower.io) `bower install doc-ready`
 
 Install with npm :truck: `npm install desandro/doc-ready`
 
