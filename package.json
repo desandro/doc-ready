@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/desandro/doc-ready",
   "dependencies": {
-    "eventie": "desandro/eventie"
+    "eventie": "^1"
   },
   "keywords": [
     "DOM",

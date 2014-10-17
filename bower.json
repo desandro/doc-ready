@@ -4,7 +4,7 @@
   "description": "Let's get this party started... on document ready",
   "main": "doc-ready.js",
   "dependencies": {
-    "eventie": "desandro/eventie"
+    "eventie": "^1"
   },
   "homepage": "https://github.com/desandro/doc-ready",
   "authors": [
