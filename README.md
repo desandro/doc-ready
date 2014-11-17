@@ -12,8 +12,6 @@ Props to [dperini/ContentLoaded](https://github.com/dperini/ContentLoaded) for o
 
 ## Install
 
-Download [doc-ready.js](doc-ready.js)
-
 Install with [Bower](http://bower.io) `bower install doc-ready`
 
 Install with npm `npm install doc-ready`
