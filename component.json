@@ -2,7 +2,7 @@
   "name": "doc-ready",
   "repo": "desandro/doc-ready",
   "description": "Let's get this party started... on document ready",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "desandro/eventie": "*"
   },
