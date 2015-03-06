@@ -14,7 +14,7 @@ Props to [dperini/ContentLoaded](https://github.com/dperini/ContentLoaded) for o
 
 Install with [Bower](http://bower.io) `bower install doc-ready`
 
-Install with npm `npm install doc-ready`
+Install with [npm] (https://www.npmjs.com) `npm install doc-ready`
 
 Install with [Component](http://github.com/component/component) `component install desandro/doc-ready`
 
