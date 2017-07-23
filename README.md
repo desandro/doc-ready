@@ -1,3 +1,13 @@
+## No longer supported
+
+Use [`DOMContentLoaded` event](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) instead. Supported by IE9+.
+
+``` js
+document.addEventListener( 'DOMContentLoaded', function( event ) {
+  console.log("DOM is ready. Let's party");
+});
+```
+
 # docReady
 
 Cross browser document ready helper. Supported by IE8+ and good browsers.
@@ -15,8 +25,6 @@ Props to [dperini/ContentLoaded](https://github.com/dperini/ContentLoaded) for o
 Install with [Bower](http://bower.io) `bower install doc-ready`
 
 Install with npm `npm install doc-ready`
-
-Install with [Component](http://github.com/component/component) `component install desandro/doc-ready`
 
 ## MIT License
 
